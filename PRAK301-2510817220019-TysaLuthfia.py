@@ -1,19 +1,12 @@
-A, B, C = map(int, input().split())
+a , b, c = (map(int, input().split()))
 
-if A >= B and A >= C :
-    if B >= C :
-        print(f"{C} {B} {A}")
-    else:
-        print(f"{B} {C} {A}")
+if a > b:
+    a,b = b,a
 
-elif B >= A and B >= C :
-    if A >= C :
-        print(f"{C} {A} {B}")
-    else:
-        print(f"{A} {C} {B}")
+if a > c:
+    a,c=c,a
 
-elif C >= A and C >= B :
-    if A >= B :
-        print(f"{B} {A} {C}")
-    else:
-        print(f"{A} {B} {C}")
+if b > c:
+    b, c = c, b
+
+print(a,b,c)

@@ -1,25 +1,15 @@
 #include <stdio.h>
 
-int main ()
-{
-    int hari, jam, menit, detik, total_detik, sisa_detik;
+int main(){
+    int detik, menit, jam, hari;
+    scanf("%d", &detik);
+    
+    hari = detik / 86400;
+    jam = (detik % 86400) / 3600;
+    menit = (detik % 3600) / 60;
+    detik = detik % 60;
 
-    scanf("%d", &total_detik);
-
-    hari = total_detik / 86400;
-    sisa_detik = total_detik % 86400;
-
-    jam = sisa_detik / 3600;
-    sisa_detik %= 3600;
-
-    menit = sisa_detik / 60;
-    detik = sisa_detik % 60;
-
-    if (hari > 0){
-        printf("%d hari %0.2d:%0.2d:%0.2d", hari, jam, menit, detik);
-    }
-    else{
-        printf("%0.2d:%0.2d:%0.2d", jam, menit, detik);
-    }
+    if (hari == 0) printf("%02d:%02d:%02d", jam, menit, detik);
+    else printf("%d hari %02d:%02d:%02d", hari, jam, menit, detik); 
     return 0;
 }

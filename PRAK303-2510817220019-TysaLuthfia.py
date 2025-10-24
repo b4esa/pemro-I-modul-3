@@ -1,8 +1,5 @@
-nilai = float(input())
+N = int(input())
 
-if nilai >0 :
-    print("positif")
-elif nilai <0 :
-    print("negatif")
-else :
-    print("nol")
+if N == 0 : print("Nol")
+elif N > 0: print("Positif")
+else: print("Negatif")

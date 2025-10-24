@@ -1,12 +1,7 @@
 nilai = int(input())
 
-if nilai >=80 :
-    print("A")
-elif nilai >=70 :
-    print("B")
-elif nilai >=60 :
-    print("C")
-elif nilai >=50 :
-    print("D")
-else :
-    print("E")
+if nilai >= 80: print("A")
+elif 70 <= nilai < 80: print("B")
+elif 60 <= nilai < 70: print("C")
+elif 50 <= nilai < 60: print("D")
+elif 0 <= nilai < 50: print("E")

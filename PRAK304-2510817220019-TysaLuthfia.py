@@ -1,12 +1,7 @@
-nilai = int(input())
+bilangan = int(input())
 
-if nilai == 0 :
-    print("Nol")
-elif nilai >= 1 and nilai <= 9 :
-    print("Satuan")
-elif nilai >= 11 and nilai <= 19 :
-    print("Belasan")
-elif nilai == 10 or nilai >= 20 and nilai <= 99 :
-    print("Puluhan")
-else :
-    print("Anda Menginput Melebihi Limit Bilangan")
+if bilangan == 0: print("Nol")
+elif 1 <= bilangan < 10: print("Satuan")
+elif bilangan == 10 or 20 <= bilangan < 100: print("Puluhan")
+elif 11 <= bilangan < 20: print("Belasan")
+else: print("Anda Menginput Melebihi Limit Bilangan")

@@ -1,19 +1,11 @@
 #include <stdio.h>
 
-int main ()
-{
-    int nilai;
-
-    scanf("%d", &nilai);
-
-    if (nilai > 0){
-        printf("positif");
-    }
-    else if (nilai < 0){
-        printf("negatif");
-    }
-    else {
-        printf("nol");
-    }
+int main(){
+    int N;
+    scanf("%d", &N);
+    
+    if(N == 0) printf("Nol");
+    else if (N > 0) printf("Positif");
+    else printf("Negatif");
     return 0;
 }
